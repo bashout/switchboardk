@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "switchboardK",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
