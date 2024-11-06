@@ -2,6 +2,7 @@
     <appender name="jsonConsoleAppender" class="ch.qos.logback.core.ConsoleAppender">
         <encoder class="net.logstash.logback.encoder.LogstashEncoder">
             <includeCallerData>true</includeCallerData>
+            <mdcKeys>correlationId</mdcKeys>
             <jsonGeneratorDecorator class="net.logstash.logback.decorate.CompositeJsonGeneratorDecorator">
                 <decorator class="net.logstash.logback.decorate.PrettyPrintingJsonGeneratorDecorator"/>
             </jsonGeneratorDecorator>
