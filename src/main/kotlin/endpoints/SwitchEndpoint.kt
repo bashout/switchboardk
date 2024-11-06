@@ -16,5 +16,8 @@ class SwitchEndpoint {
         log.atDebug{ message = "Initiating GET switch request"
             payload = buildMap(capacity = 1) { put(LogEvent.EVENT, LogEvent.GET_SWITCH)}}
         return "True"
+
+        log.atInfo{ message = "Completed GET switch request"
+            payload = buildMap(capacity = 1) { put(LogEvent.EVENT, LogEvent.GET_SWITCH_COMPLETE)}}
     }
 }
