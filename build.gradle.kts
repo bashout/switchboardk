@@ -25,6 +25,8 @@ dependencies {
     implementation("io.github.oshai:kotlin-logging-jvm:7.0.0")
     implementation("net.logstash.logback:logstash-logback-encoder:8.0")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
+    implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.6.0")
+    implementation("org.springdoc:springdoc-openapi-starter-common:2.6.0")
     testImplementation("org.springframework.boot:spring-boot-starter-web")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
     testImplementation(kotlin("test"))

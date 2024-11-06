@@ -3,3 +3,6 @@ spring:
     user:
       name: bashout
       password: test
+springdoc:
+  api-docs:
+  path: /api-docs
