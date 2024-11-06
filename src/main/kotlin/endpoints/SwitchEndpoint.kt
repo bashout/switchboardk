@@ -14,11 +14,12 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses
 import io.swagger.v3.oas.annotations.media.Content
 import io.swagger.v3.oas.annotations.media.Schema
 import io.swagger.v3.oas.annotations.tags.Tag
-import org.springframework.web.bind.annotation.*
+import org.springframework.http.HttpStatus
+import org.springframework.web.server.ResponseStatusException
 
 @RestController
 @RequestMapping("/api")
-@Tag(name = "Switch API", description = "Operations related to switch management") // Optional tag for grouping
+@Tag(name = "Switch API", description = "Operations related to switch management")
 class SwitchEndpoint {
     private val log = KotlinLogging.logger {}
 
@@ -57,6 +58,6 @@ class SwitchEndpoint {
             }
             return switch
         }
-        throw Exception("Switch not found")
+        throw ResponseStatusException(HttpStatus.NOT_FOUND, "Switch not found")
     }
 }
