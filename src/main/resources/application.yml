@@ -5,4 +5,4 @@ spring:
       password: test
 springdoc:
   api-docs:
-  path: /api-docs
+    path: /api-docs
