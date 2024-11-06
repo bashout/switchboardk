@@ -9,6 +9,10 @@
         </encoder>
     </appender>
 
+    <logger name="org.bashout.switchboardk" level="DEBUG" additivity="false">
+        <appender-ref ref="jsonConsoleAppender"/>
+    </logger>
+
     <root level="INFO">
         <appender-ref ref="jsonConsoleAppender"/>
     </root>
