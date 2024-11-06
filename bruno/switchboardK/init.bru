@@ -5,12 +5,12 @@ meta {
 }
 
 get {
-  url: http://localhost:8080/api/switch
+  url: {{baseURI}}/api/switch
   body: none
   auth: basic
 }
 
 auth:basic {
-  username: bashout
-  password: test
+  username: {{user}}
+  password: {{password}}
 }

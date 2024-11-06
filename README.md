@@ -1,6 +1,6 @@
 # SwitchboardK 🚩
 
-SwitchboardK provides a centralized store for managing feature switches (flags). Built using Kotlin 2.0.2 and the Spring framework, 
+A centralized store for managing feature switches (flags). Built using Kotlin 2.0.2 and the Spring framework, 
 it allows you to easily manage, toggle, and evaluate feature switches across multiple components, enabling feature releases, A/B testing, and gradual rollouts with minimal impact on your codebase!
 
 ## Features
