@@ -1,14 +1,14 @@
 # Build
-FROM gradle:7.5.1-corretto-21 AS build
+FROM gradle:jdk21-corretto AS build
 WORKDIR /app
 
-COPY build.gradle settings.gradle /app/
+COPY build.gradle.kts settings.gradle.kts /app/
 COPY src /app/src
 
 RUN gradle build --no-daemon
 
 # Run
-FROM amazoncorretto:21-alpine as runtime
+FROM amazoncorretto:21-alpine AS runtime
 
 WORKDIR /app
 COPY --from=build /app/build/libs/*.jar /app/app.jar
